@@ -2,8 +2,6 @@
 using namespace std;
 #define PORT 8080
 
-ssss
-
 int main(int argc, char const *argv[]) {
 
 	int server_fd, new_socket; 
