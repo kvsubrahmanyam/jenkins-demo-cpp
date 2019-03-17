@@ -13,18 +13,14 @@ pipeline {
 		stage('Build Server') {
 
 			steps {
-				sh "cd server"
-				sh "cmake ."
-				sh "make"
+				sh "cd server && cmake . && make"
 			}
 		}
 
 		stage('Build Client') {
 
 			steps {
-				sh "cd client"
-				sh "cmake ."
-				sh "make"
+				sh "cd client && cmake . && make"
 			}
 		}
 	}
