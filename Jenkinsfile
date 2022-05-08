@@ -13,14 +13,14 @@ pipeline {
 		stage('Build Server') {
 
 			steps {
-				sh "cd server && cmake . && make"
+				sh "cd server && cmake -G 'Visual Studio 16 2019'"
 			}
 		}
 
 		stage('Build Client') {
 
 			steps {
-				sh "cd client && cmake . && make"
+				sh "cd client && cmake -G 'Visual Studio 16 2019'"
 			}
 		}
 	}
